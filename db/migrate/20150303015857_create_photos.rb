@@ -1,10 +1,12 @@
 class CreatePhotos < ActiveRecord::Migration
   def change
     create_table :photos do |t|
-      t.string :image
-      t.string :clearance
-      t.integer :user_id
-
+      t.string 		   :image
+      t.integer 	   :clearance
+      t.belongs_to 	 :user
+      t.integer		   :comment_count
+      t.integer		   :like_count
+      t.integer		   :price
       t.timestamps null: false
     end
   end
