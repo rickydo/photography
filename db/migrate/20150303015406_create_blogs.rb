@@ -8,5 +8,6 @@ class CreateBlogs < ActiveRecord::Migration
       t.integer		   :like_count
       t.timestamps null: false
     end
+    add_index :blogs, :user_id
   end
 end

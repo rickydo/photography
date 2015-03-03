@@ -9,5 +9,6 @@ class CreatePhotos < ActiveRecord::Migration
       t.integer		   :price
       t.timestamps null: false
     end
+    add_index :photos, :user_id
   end
 end
