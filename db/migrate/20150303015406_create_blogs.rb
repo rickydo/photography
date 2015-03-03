@@ -2,6 +2,7 @@ class CreateBlogs < ActiveRecord::Migration
   def change
     create_table :blogs do |t|
       t.belongs_to 	 :user
+      t.string       :title
       t.text 		     :content
       t.integer 		 :clearance
       t.integer		   :comment_count
