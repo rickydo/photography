@@ -32,6 +32,15 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# validating date and times
+gem 'validates_timeliness', '~>3.0'
+
+# password strength
+gem 'strong_password', '~>0.0.3'
+
+# valid email
+gem 'valid_email'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
