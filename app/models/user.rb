@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
         :recoverable, :rememberable, :trackable, :validatable, 
         :confirmable, :lockable
 
-	has_secure_password
+	# has_secure_password
 	has_many :blogs
 	has_many :photos
 	has_many :likes
