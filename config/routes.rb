@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :admins, :skip => [:sessions]
-  devise_for :users, :skip => [:sessions]
+  devise_for :admins
+  # devise_for :users
 
 
   root 'welcome#index'
