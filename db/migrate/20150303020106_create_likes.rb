@@ -2,8 +2,8 @@ class CreateLikes < ActiveRecord::Migration
   def change
     create_table :likes do |t|
       t.references :favorite, polymorphic: true, index: true
-      t.belongs_to :user_id
-      t.belongs_to :admin_id
+      t.belongs_to :user
+      t.belongs_to :admin
       t.timestamps null: false
     end
     add_index :likes, :user_id

@@ -6,22 +6,22 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 # users
-admin = User.create!(first_name: "ricky", last_name: "do", dob: "1/1/11", email: "mail@mail.com", clearance: 0, password:"password", password_confirmation: "password")
-user1 = User.create!(first_name: "asap", last_name: "rocky", dob: "1/2/11", email: "mail1@mail.com", clearance: 1, password:"password", password_confirmation: "password")
-user2 = User.create!(first_name: "rhinestone", last_name: "cowbody", dob: "1/3/11", email: "mail2@mail.com", clearance: 2, password:"password", password_confirmation: "password")
+admin = Admin.create!(first_name: "ricky", last_name: "do", email: "mail@mail.com", password: "p@ssw0rd123A", password_confirmation: "p@ssw0rd123A")
+user1 = User.create!(first_name: "asap", last_name: "rocky", email: "mail1@mail.com", clearance: 1, password:"p@ssw0rd123A", password_confirmation: "p@ssw0rd123A")
+user2 = User.create!(first_name: "rhinestone", last_name: "cowbody", email: "mail2@mail.com", clearance: 2, password:"p@ssw0rd123A", password_confirmation: "p@ssw0rd123A")
 
 # blogs
-blog1 = Blog.create!(user_id: admin.id, content: "this is my first blog about photos", clearance: 1, comment_count: 0, like_count: 0)
-blog2 = Blog.create!(user_id: admin.id, content: "this is my first blog about photos", clearance: 1, comment_count: 0, like_count: 0)
-blog3 = Blog.create!(user_id: admin.id, content: "this is my first blog about photos", clearance: 2, comment_count: 0, like_count: 0)
-blog4 = Blog.create!(user_id: admin.id, content: "this is my first blog about photos", clearance: 2, comment_count: 0, like_count: 0)
+blog1 = Blog.create!(admin_id: admin.id, content: "this is my first blog about photos", clearance: 1, comment_count: 0, like_count: 0)
+blog2 = Blog.create!(admin_id: admin.id, content: "this is my first blog about photos", clearance: 1, comment_count: 0, like_count: 0)
+blog3 = Blog.create!(admin_id: admin.id, content: "this is my first blog about photos", clearance: 2, comment_count: 0, like_count: 0)
+blog4 = Blog.create!(admin_id: admin.id, content: "this is my first blog about photos", clearance: 2, comment_count: 0, like_count: 0)
 
 # photos
-image1 = Photo.create!(user_id: admin.id, image: "image_url", clearance: 0, comment_count: 0, like_count: 0, price: 0)
-image2 = Photo.create!(user_id: admin.id, image: "image_url", clearance: 0, comment_count: 0, like_count: 0, price: 0)
-image3 = Photo.create!(user_id: admin.id, image: "image_url", clearance: 1, comment_count: 0, like_count: 0, price: 0)
-image4 = Photo.create!(user_id: admin.id, image: "image_url", clearance: 1, comment_count: 0, like_count: 0, price: 0)
-image5 = Photo.create!(user_id: admin.id, image: "image_url", clearance: 2, comment_count: 0, like_count: 0, price: 0)
+image1 = Photo.create!(admin_id: admin.id, image: "image_url", clearance: 1, comment_count: 0, like_count: 0, price: 0)
+image2 = Photo.create!(admin_id: admin.id, image: "image_url", clearance: 1, comment_count: 0, like_count: 0, price: 0)
+image3 = Photo.create!(admin_id: admin.id, image: "image_url", clearance: 1, comment_count: 0, like_count: 0, price: 0)
+image4 = Photo.create!(admin_id: admin.id, image: "image_url", clearance: 2, comment_count: 0, like_count: 0, price: 0)
+image5 = Photo.create!(admin_id: admin.id, image: "image_url", clearance: 2, comment_count: 0, like_count: 0, price: 0)
 
 # likes
 # like1 = Like.create!(user_id: user1.id, favorite_id: blog1.id)
