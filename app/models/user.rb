@@ -5,8 +5,12 @@ class User < ActiveRecord::Base
         :recoverable, :rememberable, :trackable, :validatable, 
         :confirmable, :lockable
 
-	has_many :likes
-	has_many :comments
+	has_many :likes, as: :like_owner
+	has_many :comments, as: :comment_owner
+	has_many :folder, as: :folder_owner
+	has_many :photos, as: :photo_owner
+	has_many :non_watermarked_photos, through: :photos
+
 
 	validates :first_name, presence: true, length: { in: 2..20}
 	validates :last_name, presence: true, length: { in: 2..20}

@@ -5,7 +5,5 @@ class CreateFolders < ActiveRecord::Migration
       t.references		:folder_owner, polymorphic: true, index: true
       t.timestamps null: false
     end
-
-    add_index :folders, :photo_id
   end
 end

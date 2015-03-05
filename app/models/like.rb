@@ -1,5 +1,4 @@
 class Like < ActiveRecord::Base
-	belongs_to :user
-	belongs_to :admin
+	belongs_to :like_owner, polymorphic: true
 	belongs_to :favorite, polymorphic: true
 end
