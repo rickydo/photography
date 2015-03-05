@@ -17,11 +17,11 @@ blog3 = Blog.create!(admin_id: admin.id, content: "this is my first blog about p
 blog4 = Blog.create!(admin_id: admin.id, content: "this is my first blog about photos", clearance: 2, comment_count: 0, like_count: 0)
 
 # photos
-image1 = Photo.create!(admin_id: admin.id, image: "image_url", clearance: 1, comment_count: 0, like_count: 0, price: 0)
-image2 = Photo.create!(admin_id: admin.id, image: "image_url", clearance: 1, comment_count: 0, like_count: 0, price: 0)
-image3 = Photo.create!(admin_id: admin.id, image: "image_url", clearance: 1, comment_count: 0, like_count: 0, price: 0)
-image4 = Photo.create!(admin_id: admin.id, image: "image_url", clearance: 2, comment_count: 0, like_count: 0, price: 0)
-image5 = Photo.create!(admin_id: admin.id, image: "image_url", clearance: 2, comment_count: 0, like_count: 0, price: 0)
+image1 = Photo.create!(photo_owner_id: admin.id, image: "image_url", clearance: 1, comment_count: 0, like_count: 0, price: 0)
+image2 = Photo.create!(photo_owner_id: admin.id, image: "image_url", clearance: 1, comment_count: 0, like_count: 0, price: 0)
+image3 = Photo.create!(photo_owner_id: admin.id, image: "image_url", clearance: 1, comment_count: 0, like_count: 0, price: 0)
+image4 = Photo.create!(photo_owner_id: admin.id, image: "image_url", clearance: 2, comment_count: 0, like_count: 0, price: 0)
+image5 = Photo.create!(photo_owner_id: admin.id, image: "image_url", clearance: 2, comment_count: 0, like_count: 0, price: 0)
 
 # likes
 # like1 = Like.create!(user_id: user1.id, favorite_id: blog1.id)
