@@ -16,7 +16,11 @@
 
  */
 
- a#title-of-company {
+a#title-of-company {
  	font-size: 1.4em;
 	font-family: 'Great Vibes', cursive;
+}
+
+body {
+	background-color: #222222;
 }

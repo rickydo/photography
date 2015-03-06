@@ -58,3 +58,12 @@ Some setup you must do manually if you haven't yet:
   5. You can copy Devise views (for customization) to your app by running:
 
        rails g devise:views
+
+
+For polymorphics:
+1 option:
+admin = Admin.first
+Folder.create!(name: "name", folder_owner_id:admin, folder_owner_type: "admin")
+2 option: 
+admin = Admin.first
+admin.folders << Folder.create!(name: "name")

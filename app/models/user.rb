@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
 	has_many :likes, as: :like_owner
 	has_many :comments, as: :comment_owner
-	has_many :folder, as: :folder_owner
+	has_many :folders, as: :folder_owner
 	has_many :photos, as: :photo_owner
 	has_many :non_watermarked_photos, through: :photos
 
