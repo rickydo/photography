@@ -1,12 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-# users
 admin = Admin.create!(first_name: "ricky", last_name: "do", email: "mail@mail.com", password: "p@ssw0rd123A", password_confirmation: "p@ssw0rd123A")
+
 user1 = User.create!(first_name: "asap", last_name: "rocky", email: "mail1@mail.com", clearance: 1, password:"p@ssw0rd123A", password_confirmation: "p@ssw0rd123A")
 user2 = User.create!(first_name: "rhinestone", last_name: "cowbody", email: "mail2@mail.com", clearance: 2, password:"p@ssw0rd123A", password_confirmation: "p@ssw0rd123A")
 
@@ -35,5 +28,12 @@ image5 = Photo.create!(photo_owner_id: admin.id, image: "image_url", clearance: 
 photo3 = NonWatermarkedPhoto.create!(image: "original photo image1", photo_id: image1)
 photo1 = NonWatermarkedPhoto.create!(image: "original photo image3", photo_id: image3)
 photo2 = NonWatermarkedPhoto.create!(image: "original photo image4", photo_id: image4)
+
+# categories
+cat_names = ["Professional Portraits", "All Things Bridal", "Life's Milestones", "My Hobby", "Beauty", "Family"]
+cat_names.each do |name|
+	Category.create!(name: name)
+end
+
 
 
