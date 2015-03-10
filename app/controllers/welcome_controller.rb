@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
 	def index
-		@folders = Folder.all
+		@categories = Category.all
 	end
 end

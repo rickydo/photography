@@ -7,6 +7,7 @@ class CreatePhotos < ActiveRecord::Migration
       t.integer      :like_count
       t.integer      :price
       t.belongs_to   :folder, index: true
+      t.belongs_to   :category, index: true
       t.references   :photo_owner, polymorphic: true, index: true 
       t.timestamps null: false
     end
