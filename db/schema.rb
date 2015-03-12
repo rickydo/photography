@@ -106,17 +106,22 @@ ActiveRecord::Schema.define(version: 20150310002414) do
 
   create_table "photos", force: :cascade do |t|
     t.string   "image"
+    t.string   "marked_image"
     t.integer  "clearance"
     t.integer  "comment_count"
     t.integer  "like_count"
     t.integer  "price"
     t.integer  "folder_id"
+    t.integer  "category_id"
+    t.integer  "blog_id"
     t.integer  "photo_owner_id"
     t.string   "photo_owner_type"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end
 
+  add_index "photos", ["blog_id"], name: "index_photos_on_blog_id"
+  add_index "photos", ["category_id"], name: "index_photos_on_category_id"
   add_index "photos", ["folder_id"], name: "index_photos_on_folder_id"
   add_index "photos", ["photo_owner_type", "photo_owner_id"], name: "index_photos_on_photo_owner_type_and_photo_owner_id"
 
