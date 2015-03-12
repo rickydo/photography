@@ -24,65 +24,65 @@ a_photos = admin.photos
 
 base_img_url = "/../app/assets/images/"
 
-image1 = Photo.create!(image: base_img_url + "portraits/beautiful-15767_1920.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 1)
-image2 = Photo.create!(image: base_img_url + "portraits/boy-432502_1920.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 1)
+image1 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "portraits/beautiful-15767_1920_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 1)
+image2 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "portraits/boy-432502_1920_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 1)
 
-image3 = Photo.create!(image: base_img_url + "wedding/beach-625580_1920.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 2)
-image4 = Photo.create!(image: base_img_url + "wedding/bride-454144_1920.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 2)
+image3 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "wedding/beach-625580_1920_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 2)
+image4 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "wedding/bride-454144_1920_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 2)
 
-image5 = Photo.create!(image: base_img_url + "milestones/love-497528_1920.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 3)
-image6 = Photo.create!(image: base_img_url + "milestones/rock-island-123406.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 3)
+image5 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "milestones/love-497528_1920_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 3)
+image6 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "milestones/rock-island-123406_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 3)
 
-image7 = Photo.create!(image: base_img_url + "hobby/automobile-176989_1920.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 4)
-image8 = Photo.create!(image: base_img_url + "hobby/coast-192979.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 4)
+image7 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "hobby/automobile-176989_1920_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 4)
+image8 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "hobby/coast-192979_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 4)
 
-image9 = Photo.create!(image: base_img_url + "beauty-pics/beauty-354572_1920.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 5)
-image10 = Photo.create!(image: base_img_url + "beauty-pics/fairy-tales-636649_1920.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 5)
+image9 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "beauty-pics/beauty-354572_1920_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 5)
+image10 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "beauty-pics/fairy-tales-636649_1920_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 5)
 
-image11 = Photo.create!(image: base_img_url + "family/baby-17342_1920.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 6)
-image12 = Photo.create!(image: base_img_url + "family/baby-17343_1920.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 6)
+image11 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "family/baby-17342_1920_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 6)
+image12 = Photo.create!(image: base_image_url + "" ,marked_image: base_img_url + "family/baby-17343_1920_marked.jpg", clearance: 0, comment_count: 0, like_count: 0, price: 0, category_id: 6)
 
 common_images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12]
 common_images.each do |image|
 	a_photos << image
 end
 
-######### photos requiring clearance levels ###########
-c_image1 = Photo.create(image: base_img_url + "portraits/afroamerican-499208_1920.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 1)
-c_image2 = Photo.create(image: base_img_url + "portraits/assistant-18993_1920.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 1)
-
-c_image3 = Photo.create(image: base_img_url + "wedding/banquet-453799_1920.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 2)
-c_image4 = Photo.create(image: base_img_url + "wedding/bride-45144_1920.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 2)
-
-c_image5 = Photo.create(image: base_img_url + "milestones/paternity-633453_1920.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 3)
-c_image6 = Photo.create(image: base_img_url + "milestones/speaker-649039.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 3)
-
-c_image7 = Photo.create(image: base_img_url + "hobby/car-604019_1920.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 4)
-c_image8 = Photo.create(image: base_img_url + "hobby/dandelion-431079_1920.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 4)
-
-c_image9 = Photo.create(image: base_img_url + "beauty-pics/girl-237871_1920.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 5)
-c_image10 = Photo.create(image: base_img_url + "beauty-pics/girl-410334_1920.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 5)
-
-c_image11 = Photo.create(image: base_img_url + "family/baby-20607_1920.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 6)
-c_image12 = Photo.create(image: base_img_url + "family/baby-20674_1920.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 6)
-
-c_image13 = Photo.create(image: base_img_url + "portraits/brunette-15963_1920.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 1)
-c_image14 = Photo.create(image: base_img_url + "portraits/businessman-411487.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 1)
-
-c_image15 = Photo.create(image: base_img_url + "wedding/engagement-637789_1920.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 2)
-c_image16 = Photo.create(image: base_img_url + "wedding/glasses-213156_1920.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 2)
-
-c_image17 = Photo.create(image: base_img_url + "milestones/paternity-633443_1920.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 3)
-c_image18 = Photo.create(image: base_img_url + "milestones/422249_1920.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 3)
-
-c_image19 = Photo.create(image: base_img_url + "hobby/grandpa-519246_1920.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 4)
-c_image20 = Photo.create(image: base_img_url + "hobby/landscape-540122_1920.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 4)
-
-c_image21 = Photo.create(image: base_img_url + "beauty-pics/girl-487094.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 5)
-c_image22 = Photo.create(image: base_img_url + "beauty-pics/girl-559307_1920.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 5)
-
-c_image23 = Photo.create(image: base_img_url + "family/brothers-457234_1920.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 6)
-c_image24 = Photo.create(image: base_img_url + "family/brothers-457237_1920.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 6)
+######### photos requiring clearance levels ##"", #########
+c_image1 = Photo.create(image: base_img_url + "", marked_image: base_img_url + "portraits/afroamerican-499208_1920_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 1)
+c_image2 = Photo.create(image: base_img_url + marked_image: base_img_url + "portraits/assistant-18993_1920_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 1)
+"", 
+c_image3 = Photo.create(image: base_img_url + "", marked_image: base_img_url + "wedding/banquet-453799_1920_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 2)
+c_image4 = Photo.create(image: base_img_url + marked_image: base_img_url + "wedding/bride-45144_1920_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 2)
+"", 
+c_image5 = Photo.create(image: base_img_url + "", marked_image: base_img_url + "milestones/paternity-633453_1920_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 3)
+c_image6 = Photo.create(image: base_img_url + marked_image: base_img_url + "milestones/speaker-649039_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 3)
+"", 
+c_image7 = Photo.create(image: base_img_url + "", marked_image: base_img_url + "hobby/car-604019_1920_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 4)
+c_image8 = Photo.create(image: base_img_url + marked_image: base_img_url + "hobby/dandelion-431079_1920_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 4)
+"", 
+c_image9 = Photo.create(image: base_img_url + m"", arked_image: base_img_url + "beauty-pics/girl-237871_1920_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 5)
+c_image10 = Photo.create(image: base_img_url + marked_image: base_img_url + "beauty-pics/girl-410334_1920_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 5)
+"", 
+c_image11 = Photo.create(image: base_img_url + "", marked_image: base_img_url + "family/baby-20607_1920_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 6)
+c_image12 = Photo.create(image: base_img_url + marked_image: base_img_url + "family/baby-20674_1920_marked.jpg", clearance: 1, comment_count: 0, like_count: 0, price: 0, category_id: 6)
+"", 
+c_image13 = Photo.create(image: base_img_url + "", marked_image: base_img_url + "portraits/brunette-15963_1920_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 1)
+c_image14 = Photo.create(image: base_img_url + marked_image: base_img_url + "portraits/businessman-411487_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 1)
+"", 
+c_image15 = Photo.create(image: base_img_url + "", marked_image: base_img_url + "wedding/engagement-637789_1920_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 2)
+c_image16 = Photo.create(image: base_img_url + marked_image: base_img_url + "wedding/glasses-213156_1920_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 2)
+"", 
+c_image17 = Photo.create(image: base_img_url + "", marked_image: base_img_url + "milestones/paternity-633443_1920_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 3)
+c_image18 = Photo.create(image: base_img_url + marked_image: base_img_url + "milestones/422249_1920_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 3)
+"", 
+c_image19 = Photo.create(image: base_img_url + "", marked_image: base_img_url + "hobby/grandpa-519246_1920_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 4)
+c_image20 = Photo.create(image: base_img_url + marked_image: base_img_url + "hobby/landscape-540122_1920_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 4)
+"", 
+c_image21 = Photo.create(image: base_img_url + "", marked_image: base_img_url + "beauty-pics/girl-487094_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 5)
+c_image22 = Photo.create(image: base_img_url + marked_image: base_img_url + "beauty-pics/girl-559307_1920_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 5)
+"", 
+c_image23 = Photo.create(image: base_img_url + "", marked_image: base_img_url + "family/brothers-457234_1920_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 6)
+c_image24 = Photo.create(image: base_img_url + marked_image: base_img_url + "family/brothers-457237_1920_marked.jpg", clearance: 2, comment_count: 0, like_count: 0, price: 0, category_id: 6)
 
 ######### photos specific to user ###########
 u1_photos = user1.photos
