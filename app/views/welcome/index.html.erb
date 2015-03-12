@@ -1,5 +1,9 @@
 <div class="general-welcome-content">
 	<div class="row">
-		
+		<% @categories.each do |category| %>
+			<li><%= category.name %></li>
+		<% end %>
+		<%= @categories.count %>
+		<p>Hello!!!</p>
 	</div>
 </div>

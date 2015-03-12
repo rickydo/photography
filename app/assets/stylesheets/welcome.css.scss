@@ -1,3 +1,16 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//= require index.html.erb
+@import "foundation_and_overrides.scss";
+
+.general-welcome-content{
+
+	p, li { 
+		color: $white;
+	}
+
+	li {
+		text-decoration: none;
+	}
+}
