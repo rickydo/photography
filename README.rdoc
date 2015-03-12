@@ -38,3 +38,7 @@ Folder.create!(name: "name", folder_owner_id:admin, folder_owner_type: "admin")
 2 option: 
 admin = Admin.first
 admin.folders << Folder.create!(name: "name")
+
+Guard live reload:
+
+guard -P livereload
