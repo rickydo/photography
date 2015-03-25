@@ -1,12 +1,11 @@
 <div class="general-welcome-content grid">
 	<div class="row">
 		<% @categories.each do |category| %>
-			<%=  link_to category_path(category) do %>
 				<div class="columns small-4">
-					<label class = "cat_title"><%= category.name %></label><br>
-					<%= image_tag category.thumbnail, class: "welcome_thumbnail" %>			
+					<%=  link_to category_path(category) do%><label class = "cat_title"><%= category.name %></label><% end %><br>
+					<%=  link_to category_path(category) do %><%= image_tag category.thumbnail, class: "welcome_thumbnail" %><%end%>		
 				</div>
-			<%end%>
+			
 		<% end %>
 	</div>
 </div>
