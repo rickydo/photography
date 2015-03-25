@@ -4,16 +4,23 @@
 
 @import "foundation_and_overrides";
 
-.general-welcome-content{
-
-	p, h4 { 
-		color: $white;
-	}
-
-	.welcome_thumbnail{
-		width: 150px;
-		height: 150px;
-		border-radius: 10px;
+.general-welcome-content {
+	.row {
+		margin-top: 20px;
+		.cat_title {
+			text-align: center;
+			margin-bottom: 0;
+			margin-top: 10px;
+			color: $white;
+			font-size: 1em;
+		}
+		.welcome_thumbnail {
+			width: 150px;
+			height: 150px;
+			border-radius: 10px;
+			display: block;
+			margin: 0 auto;
+		}
 	}
 
 }

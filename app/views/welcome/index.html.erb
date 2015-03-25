@@ -1,8 +1,8 @@
-<div class="general-welcome-content">
+<div class="general-welcome-content grid">
 	<div class="row">
 		<% @categories.each do |category| %>
-			<div class="category">
-				<h4><%= category.name %></h4><br>
+			<div class="columns small-4">
+				<label class = "cat_title"><%= category.name %></label><br>
 				<%= image_tag category.thumbnail, class: "welcome_thumbnail" %>			
 			</div>
 		<% end %>
