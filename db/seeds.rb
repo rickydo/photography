@@ -26,6 +26,12 @@ cat_with_thumb = cat_names.zip(cat_thumbs)
 cat_with_thumb.each do |name, url|
 	Category.create!(name: name, thumbnail: url)
 end
+Category.first.update(slug: "portraits")
+Category.second.update(slug: "bridal")
+Category.third.update(slug: "milestones")
+Category.fourth.update(slug: "hobby")
+Category.fifth.update(slug: "beauty")
+Category.last.update(slug: "family")
 
 ######### photos for all users/non-users ###########
 a_photos = admin.photos
