@@ -77,6 +77,8 @@ GEM
     foundation-rails (5.5.1.0)
       railties (>= 3.1.0)
       sass (>= 3.3.0, < 3.5)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
     guard (2.12.4)
@@ -228,6 +230,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   foundation-rails
+  friendly_id (~> 5.1.0)
   guard (>= 2.2.2)
   guard-livereload
   jbuilder (~> 2.0)

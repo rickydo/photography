@@ -47,6 +47,9 @@ gem 'devise'
 # foundation
 gem 'foundation-rails'
 
+# friendly ID, for friendly urls
+gem 'friendly_id', '~>5.1.0'
+
 group :development do
 	gem 'letter_opener'
 	gem "guard", ">= 2.2.2",       :require => false
