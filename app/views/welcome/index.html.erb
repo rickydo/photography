@@ -1,9 +1,10 @@
 <div class="general-welcome-content">
 	<div class="row">
 		<% @categories.each do |category| %>
-			<li><%= category.name %></li>
+			<div class="category">
+				<h4><%= category.name %></h4><br>
+				<%= image_tag category.thumbnail, class: "welcome_thumbnail" %>			
+			</div>
 		<% end %>
-		<%= @categories.count %>
-		
 	</div>
 </div>

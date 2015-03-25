@@ -6,11 +6,14 @@
 
 .general-welcome-content{
 
-	p, li { 
+	p, h4 { 
 		color: $white;
 	}
 
-	li {
-		text-decoration: none;
+	.welcome_thumbnail{
+		width: 150px;
+		height: 150px;
+		border-radius: 10px;
 	}
+
 }
