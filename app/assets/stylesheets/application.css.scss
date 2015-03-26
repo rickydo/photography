@@ -15,6 +15,7 @@
  *= require foundation_and_overrides
 
  */
+ @import "foundation_and_overrides";
 
 
 a#title-of-company {
@@ -24,4 +25,8 @@ a#title-of-company {
 
 body {
 	background-color: #222222;
+}
+
+p, li {
+	color: $white;
 }
