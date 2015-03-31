@@ -11,20 +11,10 @@ class Category < ActiveRecord::Base
 
 	# pull out photos non users can view in that category
 
-	def non_user_category_photos
+	def viewable_category_photos(clearance_num)
 		images = []
 		category_photos.each do |image|
-			images << image[0] if image[1] == 0
-		end
-		images
-	end
-
-	# pull out photos users can view with low clearance 
-
-	def low_user_category_photos
-		images = []
-		category_photos.each do |image|
-			images << image[0] if image[1] <= 1
+			images << image[0] if image[1] == clearance_num
 		end
 		images
 	end
