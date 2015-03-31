@@ -1,0 +1,18 @@
+ @import "foundation_and_overrides";
+
+ .contain-to-grid{
+	 a#title-of-company {
+	 	font-size: 1.4em;
+		font-family: 'Great Vibes', cursive;
+	}
+	.top-bar-section {
+		ul.right {
+			li {
+				a {
+					color: $white;
+					font-size: 1.1em;
+				}
+			}
+		}
+	}
+ }
