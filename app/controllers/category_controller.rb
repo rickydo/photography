@@ -1,5 +1,5 @@
 class CategoryController < ApplicationController
 	def show
-		@category = Category.find(params[:id])
+		@category_imgs = Category.find(params[:id]).viewable_category_photos
 	end
 end
