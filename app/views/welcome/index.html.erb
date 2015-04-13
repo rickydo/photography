@@ -1,6 +1,8 @@
 <div class="general-welcome-content grid">
 	<section id = "categories">
 		<div class="row">
+			<a name="top"></a>
+			<h3 data-magellan-destination="top"></h3>
 			<% @categories.each do |category| %>
 					<div class="columns medium-4">
 						<%=  link_to category_path(category) do%><label class = "cat_title"><%= category.name %></label><% end %><br>
@@ -8,6 +10,10 @@
 					</div>			
 			<% end %>
 		</div>
+	</section>
+	<section id = "blog">
+		<a name="blog"></a>
+		<h3 data-magellan-destination="blog">My Blog</h3>
 	</section>
 	<section id = "services">
 		<a name="services"></a>
